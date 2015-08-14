@@ -53,7 +53,7 @@ class fwlib_updater {
 				}
 				$response = json_decode( wp_remote_retrivere_body( wp_remote_get( $request_uri ) ), true ); //Get JSON and parse it
 				if( is_array( $response ) ) { //If it is an array
-					$response = current( $response ): // Get the first item
+					$response = current( $response ); // Get the first item
 				}
 				if( $this->authorize_token ) { //Is there an access token?
 					$response['zipball_url'] = add_query_arg( 'access_token', $this->authorize_token, $response['zipball_url'] ); //Update our zip url with token
