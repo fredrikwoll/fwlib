@@ -1,7 +1,7 @@
 <?php
 
 
-fwlib_updater { 
+class fwlib_updater { 
 	
 	protected $file;
 	protected $plugin;
