@@ -122,4 +122,6 @@ class fwlib_updater {
 		}
 		return $result;
 	}
+
 }
+?>
