@@ -124,4 +124,3 @@ class fwlib_updater {
 	}
 
 }
-?>
